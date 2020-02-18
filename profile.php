@@ -18,16 +18,18 @@
     } ?>
 
     <main>
+
         <form action="./controllers/settings.php" method="post">
-            <label for="keepImage">Image
-                <input type="checkbox" value="imgOn" name="imgCheck" <?= ($_SESSION['imgCheck'] == 'imgOn') ? 'checked' : '' ?>>
+            <label for="keepSerie">Series
+                <input type="checkbox" value="serieOn" name="serieCheck" <?= ($_SESSION['serieCheck'] == 'serieOn') ? 'checked' : '' ?>>
             </label>
 
-            <label for="keepDescription">Description
-                <input type="checkbox" value="descOn" name="descCheck" <?= ($_SESSION['descCheck'] == 'descOn') ? 'checked' : '' ?>>
+            <label for="keepGame">Jeux Vidéos
+                <input type="checkbox" value="gameOn" name="gameCheck" <?= ($_SESSION['gameCheck'] == 'gameOn') ? 'checked' : '' ?>>
             </label>
             <button type="submit">Sauvegarder les préférences</button>
         </form>
+
     </main>
 </body>
 

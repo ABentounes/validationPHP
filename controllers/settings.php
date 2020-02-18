@@ -2,7 +2,7 @@
 
 session_start();
 
-$_SESSION['imgCheck'] = $_POST['imgCheck'];
-$_SESSION['descCheck'] = $_POST['descCheck'];
+$_SESSION['serieCheck'] = $_POST['serieCheck'];
+$_SESSION['gameCheck'] = $_POST['gameCheck'];
 
-header('Location: /');
+header('Location: ../wall.php');

@@ -13,6 +13,10 @@
 
 <body>
   <?php include_once './templates/header.php' ?>
+  <?php if ($_SESSION['name'] != "Jon") {
+    $_SESSION['denied'] = 'true';
+    header('Location: ./login.php');
+  } ?>
   <div id="container">
     <h1>Derniers Posts</h1>
     <div class="post">
@@ -20,13 +24,13 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati iure veritatis sequi reiciendis voluptatum recusandae quam architecto dignissimos autem? Consequatur similique quia alias voluptates repudiandae reprehenderit maxime voluptate omnis.</p>
       <p>Note: 3/10</p>
     </div>
-    
+
     <div class="post">
       <h2>The Good Place: Le pourquoi du comment</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum obcaecati iure veritatis sequi reiciendis voluptatum recusandae quam architecto dignissimos autem? Consequatur similique quia alias voluptates repudiandae reprehenderit maxime voluptate omnis.</p>
       <p>Note: 8/10</p>
     </div>
-    
+
     <div class="post">
       <h2>Diablo 4: Top ou Flop?</h2>
       <p>Bah je sais pas, mais la hype est là</p>

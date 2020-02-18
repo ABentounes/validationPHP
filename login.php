@@ -16,6 +16,12 @@
     <main>
         <div id="container">
             <form action="./controllers/log.php" class="flex" method="POST">
+                <?php if ($_SESSION['denied'] == 'true') : ?>
+                    <div class='error'>
+                        <img src="./images/accessDenied.gif" alt="">
+                        <p>Veuillez vous connecter pour profiter de la totalité du site</p>
+                    </div>
+                <?php endif ?>
                 <div id="back" class="flex">
 
                     <h1>Login</h1>
@@ -25,14 +31,16 @@
                     </div>
                     <div>
                         <label for="password">Mot de Passe</label><br>
-                        <input type="text" name="password" autocomplete="off">
+                        <input type="password" name="password" autocomplete="off">
                     </div>
 
                     <input type="submit" value="Connection">
 
-                    <!--I'm destroying the session in case of bad logs, so I can't have this condition, leaving it here for the moment -->
+                    <!--  -->
 
-                    <?php if (((isset($_SESSION['name']) && $_SESSION['name'] == 'Jon')) && ((isset($_SESSION['password']) && $_SESSION['password'] == '1234'))) : ?>
+                    <?php
+
+                    if ((isset($_SESSION['name']) && $_SESSION['name'] != 'Jon') || (isset($_SESSION['password']) && $_SESSION['password'] != '1234')) : ?>
                         <p id='error'>Mauvais nom de compte ou mot de passe</p>
                     <?php endif ?>
 

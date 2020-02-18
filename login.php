@@ -36,10 +36,8 @@
 
                     <input type="submit" value="Connection">
 
-                    <!--  -->
-
+                    <!-- Not working, because when I send the form but the logs are wrong, I destroy the session. Guess it would work if I was checking a database instead of creating a session -->
                     <?php
-
                     if ((isset($_SESSION['name']) && $_SESSION['name'] != 'Jon') || (isset($_SESSION['password']) && $_SESSION['password'] != '1234')) : ?>
                         <p id='error'>Mauvais nom de compte ou mot de passe</p>
                     <?php endif ?>

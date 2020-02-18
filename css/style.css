@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: absolute;
+    height: 90%;
+    width: 80%;
+    background-color: rgb(243, 243, 243);
+    left: 10%;
+}
+
+#container h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#presentation p{
+    text-align: center;
+    font-size: large;
+    margin: 30px;
+}
+
+
+.post{
+    padding: 10px;
+    margin: 50px 50px;
+    border: solid;
+    border-radius: 10px;
+}

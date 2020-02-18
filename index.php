@@ -19,14 +19,13 @@
             <p>Donnez votre avis sur tout: films, jeux, livres, restaurants...</p>
             <p>Partagez vos gouts et vos expériences, trouvez des groupes pour faire des sorties</p>
 
-            <?php if ($_SESSION['descCheck'] == 'descOn' || !isset($_SESSION['name'])) : ?>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil ipsum quia illo voluptate, vero sunt neque necessitatibus, recusandae dignissimos doloribus similique aut molestiae dolorum, eius suscipit vel excepturi repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est ipsam eaque sapiente tempora ratione unde error magni! Reprehenderit quo qui laudantium dolore voluptatum recusandae magnam praesentium, odit accusamus tempore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vitae eveniet fugit molestias magni nemo? Quam dolorem pariatur ullam quidem est aut, vel, quisquam cum officiis cumque porro error aspernatur?</p>
-            <?php endif ?>
+
 
         </div>
-        <?php if ($_SESSION['imgCheck'] == 'imgOn' || !isset($_SESSION['name'])) : ?>
+
             <img src="./images/team.png" alt="">
-        <?php endif ?>
+
 
     </div>
     <?php include_once './templates/footer.php' ?>

@@ -22,6 +22,17 @@
     margin: 30px;
 }
 
+#container>img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    display: block;
+    
+
+    height: 256px;
+    width: 256px;
+}
+
 
 .post{
     padding: 10px;

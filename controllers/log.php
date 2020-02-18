@@ -3,7 +3,14 @@
 session_start();
 
 $_SESSION['name'] = $_POST['name'];
-$_SESSION[''] = '';
+$_SESSION['password'] = $_POST['password'];
 $_SESSION[''] = '';
 
-header('Location: /');
+if ($_SESSION['name'] == 'Jon' && $_SESSION['password'] == '1234') {
+    header('Location: /');
+}else {
+    header('Location:../login.php');
+    session_destroy();
+}
+
+

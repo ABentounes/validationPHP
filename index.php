@@ -21,6 +21,7 @@
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nihil ipsum quia illo voluptate, vero sunt neque necessitatibus, recusandae dignissimos doloribus similique aut molestiae dolorum, eius suscipit vel excepturi repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est ipsam eaque sapiente tempora ratione unde error magni! Reprehenderit quo qui laudantium dolore voluptatum recusandae magnam praesentium, odit accusamus tempore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vitae eveniet fugit molestias magni nemo? Quam dolorem pariatur ullam quidem est aut, vel, quisquam cum officiis cumque porro error aspernatur?</p>
         </div>
+        <img src="./images/team.png" alt="">
     </div>
     <?php include_once './templates/footer.php' ?>
 

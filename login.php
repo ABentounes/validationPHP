@@ -12,20 +12,34 @@
 
 <body>
     <?php include_once './templates/header.php' ?>
-    <main class="flex">
-        <form action="./controllers/log.php" class="flex" method="POST">
-            <div id="leftSide">
-                <div id="circle"></div>
-            </div>
-            <div id="rightSide" class="flex">
-                <h1>Login</h1>
-                <div>
-                    <label for="name">Ton Nom</label><br>
-                    <input type="text" name="name" autocomplete="off">
+
+    <main>
+        <div id="container">
+            <form action="./controllers/log.php" class="flex" method="POST">
+                <div id="back" class="flex">
+
+                    <h1>Login</h1>
+                    <div>
+                        <label for="name">Nom de Compte</label><br>
+                        <input type="text" name="name" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="password">Mot de Passe</label><br>
+                        <input type="text" name="password" autocomplete="off">
+                    </div>
+
+                    <input type="submit" value="Connection">
+
+                    <!--I'm destroying the session in case of bad logs, so I can't have this condition, leaving it here for the moment -->
+
+                    <?php if (((isset($_SESSION['name']) && $_SESSION['name'] == 'Jon')) && ((isset($_SESSION['password']) && $_SESSION['password'] == '1234'))) : ?>
+                        <p id='error'>Mauvais nom de compte ou mot de passe</p>
+                    <?php endif ?>
+
                 </div>
-                <input type="submit" value="Connection">
-        </form>
+            </form>
         </div>
+
     </main>
     <?php include_once './templates/footer.php' ?>
 

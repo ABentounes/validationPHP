@@ -1,5 +1,74 @@
 * {
+
     margin: 0;
     padding: 0;
+}
+body {
+    height: 100vh;
+}
+
+
+.flex {
+    display: flex;
+}
+
+#container {
+    position: absolute;
+    height: 85%;
+    width: 80%;
+    background-color: rgb(243, 243, 243);
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form {
+    width: 700px;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid lightblue;
+    text-align: center;
+    border-radius: 20px;
+}
+
+form div {
+    text-align: left;
+}
+
+#circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('../images/heart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid lightblue;
+}
+
+#back{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 115, 0);
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+}
+
+form input[type=text] {
+    width: 150px;
+}
+
+form input[type=submit] {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: large;
+    color: white;
+    background: linear-gradient(270deg, #ee3838, #3846df);
 }
 

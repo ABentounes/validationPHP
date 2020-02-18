@@ -6,7 +6,7 @@
       <li><a href="/">Accueil</a></li>
       <li><a href="./wall.php">Derniers posts</a></li>
 
-      <?php if (isset($_SESSION['name'])) : ?>
+      <?php if (isset($_SESSION['name']) && $_SESSION['name'] == 'Jon') : ?>
         <li class="dropdown">
           <span>Bonjour <?= $_SESSION['name'] ?></span>
           <ul class="dropdownContent">
